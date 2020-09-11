@@ -162,6 +162,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml
 
+# OTA
+PRODUCT_HOST_PACKAGES += \
+    signapk
+
 # Ril
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.4
