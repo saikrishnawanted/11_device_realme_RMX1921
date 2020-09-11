@@ -28,8 +28,7 @@ TARGET_LMKD_STATS_LOG := true
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Properties
 -include $(LOCAL_PATH)/vendor_props.mk
@@ -183,10 +182,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
-# Trust HAL
-PRODUCT_PACKAGES += \
-    lineage.trust@1.0-service
-
 # VNDK-SP
 PRODUCT_PACKAGES += \
     vndk-sp
@@ -207,7 +202,3 @@ PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService
-
-# Touch
-PRODUCT_PACKAGES += \
-    lineage.touch@1.0-service.x2
