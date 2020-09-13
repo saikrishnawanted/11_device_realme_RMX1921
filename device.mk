@@ -35,7 +35,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 # Properties
--include $(LOCAL_PATH)/vendor_props.mk
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+-include $(LOCAL_PATH)/product_props.mk
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
