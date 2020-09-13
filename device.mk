@@ -138,6 +138,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+#Prebuilts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/kernel:kernel
+
 # Power
 PRODUCT_PACKAGES += \
     power.qcom:64
