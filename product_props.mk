@@ -7,6 +7,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.adb.secure=0
 endif
 
+# Disable Rescue Party on userdebug & eng build
+ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.disable_rescue=true
+endif
+
 # Priv-app permission
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log
