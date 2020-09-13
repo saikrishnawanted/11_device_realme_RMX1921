@@ -63,7 +63,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    Camera2
 
 # Common init scripts
 PRODUCT_PACKAGES += \
