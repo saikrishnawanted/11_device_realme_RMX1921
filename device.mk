@@ -212,3 +212,14 @@ PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService
+#
+# These are bind mounted with vendor hals and crash for hidltransport symbols
+#
+#HACK copy sensor impl
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/sensors/android.hardware.sensors32@1.0-impl.x2.so:system/lib/hw/android.hardware.sensors@1.0-impl.x2.so \
+    $(LOCAL_PATH)/prebuilts/sensors/android.hardware.sensors64@1.0-impl.x2.so:system/lib64/hw/android.hardware.sensors@1.0-impl.x2.so
+
+#Hack light hal
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/prebuilts/android.hardware.light@2.0-service.x2:system/bin/hw/android.hardware.light@2.0-service.x2
