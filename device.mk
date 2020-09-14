@@ -87,7 +87,6 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.x2 \
     lineage.biometrics.fingerprint.inscreen@1.0-service.x2 \
     vendor.oppo.hardware.biometrics.fingerprint@2.1
 
@@ -157,8 +156,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediaextractor-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
 
 # Sensors Hal
-PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl.x2
+#PRODUCT_PACKAGES += \
+#    android.hardware.sensors@1.0-impl.x2
 
 # Sensors
 PRODUCT_COPY_FILES += \
@@ -205,8 +204,8 @@ PRODUCT_PACKAGES += \
 #    WfdCommon
 
 # Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.x2
+#PRODUCT_PACKAGES += \
+#    android.hardware.light@2.0-service.x2
 
 # RCS
 PRODUCT_PACKAGES += \
