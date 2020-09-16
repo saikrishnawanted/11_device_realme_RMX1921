@@ -1,4 +1,4 @@
 hidl_package_root {
     name: "vendor.lineage",
-    path: "device/realme/X2/lineage_interface",
+    path: "device/realme/RMX1921/lineage_interface",
 }

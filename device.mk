@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/realme/X2/X2-vendor.mk)
+$(call inherit-product, vendor/realme/RMX1921/RMX1921-vendor.mk)
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
@@ -87,7 +87,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    lineage.biometrics.fingerprint.inscreen@1.0-service.x2 \
+    lineage.biometrics.fingerprint.inscreen@1.0-service.RMX1921 \
     vendor.oppo.hardware.biometrics.fingerprint@2.1
 
 # Fingerprint
@@ -157,7 +157,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors Hal
 #PRODUCT_PACKAGES += \
-#    android.hardware.sensors@1.0-impl.x2
+#    android.hardware.sensors@1.0-impl.RMX1921
 
 # Sensors
 PRODUCT_COPY_FILES += \
@@ -205,7 +205,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 #PRODUCT_PACKAGES += \
-#    android.hardware.light@2.0-service.x2
+#    android.hardware.light@2.0-service.RMX1921
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -217,9 +217,9 @@ PRODUCT_PACKAGES += \
 #
 #HACK copy sensor impl
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/sensors/android.hardware.sensors32@1.0-impl.x2.so:system/lib/hw/android.hardware.sensors@1.0-impl.x2.so \
-    $(LOCAL_PATH)/prebuilts/sensors/android.hardware.sensors64@1.0-impl.x2.so:system/lib64/hw/android.hardware.sensors@1.0-impl.x2.so
+    $(LOCAL_PATH)/prebuilts/sensors/android.hardware.sensors32@1.0-impl.RMX1921.so:system/lib/hw/android.hardware.sensors@1.0-impl.RMX1921.so \
+    $(LOCAL_PATH)/prebuilts/sensors/android.hardware.sensors64@1.0-impl.RMX1921.so:system/lib64/hw/android.hardware.sensors@1.0-impl.RMX1921.so
 
 #Hack light hal
 #PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/prebuilts/android.hardware.light@2.0-service.x2:system/bin/hw/android.hardware.light@2.0-service.x2
+#    $(LOCAL_PATH)/prebuilts/android.hardware.light@2.0-service.RMX1921:system/bin/hw/android.hardware.light@2.0-service.RMX1921
